@@ -15,3 +15,10 @@ To set up this project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/chamali02/FYP.git
+
+2. install dependencies
+    ```bash
+    npm install
+3. run the application 
+    ```bash
+    npm run
