@@ -1,0 +1,121 @@
+
+.navbar {
+    background-color: #196f2d; 
+    background: linear-gradient(to right, #03cf33, #145920); 
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-logo {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem 0;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 1rem;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-link:hover, .nav-active {
+    color: #196f2d;
+    background-color: #fff;
+    border-radius: 20px;
+    transform: translateY(-2px);
+  }
+  
+  .logout-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  
+  .logout-btn:hover {
+    color: #196f2d;
+    background-color: #fff;
+  }
+  
+  
+  .navbar-toggle {
+    display: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 80px; 
+      left: 0;
+      right: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s;
+      background: linear-gradient(to right, #196f2d, #145920); 
+      border-top: 1px solid rgba(255, 255, 255, 0.3); 
+    }
+  
+    .nav-menu.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .nav-item {
+      width: 100%;
+      margin: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+    }
+  
+    .nav-link {
+      justify-content: center;
+      border-radius: 0;
+    }
+  
+    .navbar-toggle {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+    }
+  }
+  

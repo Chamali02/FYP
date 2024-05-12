@@ -1,0 +1,60 @@
+.generate-btn:disabled {
+    background-color: #666; /* Dark gray, you can adjust as needed */
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.certificate-generator {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 300px; 
+    margin: 20px auto;
+}
+
+.generate-btn {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.generate-btn:hover {
+    background-color: #005700; 
+}
+
+.download-section {
+    margin-top: 10px;
+}
+
+.download-link {
+    background-color: #008CBA; 
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.download-link:hover {
+    background-color: #007B9E; 
+}

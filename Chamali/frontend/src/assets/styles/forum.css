@@ -1,0 +1,103 @@
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #006408;
+    display: block;
+    margin-top: 20px;
+    text-transform: capitalize;
+  }
+  
+  form input[type="text"],
+  form input[type="file"] {
+    width: calc(100% - 22px);
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+  form input[type="file"] {
+    border: none;
+  }
+  input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+.success-message {
+  color: #155724; 
+  background-color: #d4edda; 
+  border: 1px solid #c3e6cb; 
+  border-radius: 0.25rem; 
+  padding: 1rem; 
+  margin-top: 1rem;
+  font-size: 1rem; 
+  text-align: center; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  width: 80%; 
+  max-width: 600px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success-message {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+
+  form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #006408;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #004d07;
+  }
+  
+
+  @media (max-width: 640px) {
+    form {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  

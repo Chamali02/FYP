@@ -1,0 +1,139 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4; 
+}
+.level-display-container {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px; 
+  text-align: center;
+}
+.top-companies-container {
+  padding: 20px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.top-companies-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.company-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.company-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+}
+
+.company-name {
+  font-size: 1.4em;
+  color: #444;
+  margin: 10px 0;
+}
+
+.company-rating {
+  font-size: 1.6em;
+  color: #ffcc00;
+  margin: 5px 0;
+}
+
+.company-rating i {
+  margin-right: 5px;
+}
+
+.company-rating span {
+  font-weight: bold;
+  color: #333;
+}
+
+.company-info {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .company-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.level-display-card {
+  padding: 1rem;
+  background: #e8f5e9; 
+  border: 2px solid #196f2d; 
+  border-radius: 8px;
+  display: inline-block; 
+  margin: auto;
+}
+
+.level-display-text {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.level-display-value {
+  font-size: 2rem;
+  color: #196f2d;
+  font-weight: bold;
+}
+
+.report-container {
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 600px; 
+}
+
+.loader, .report-instruction-text, .download-ready-text {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.generate-report-btn, .download-report-btn {
+  padding: 10px 20px;
+  background-color: #196f2d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generate-report-btn:hover, .download-report-btn:hover {
+  background-color: #145920; 
+}
+
+.error-message {
+  color: #d32f2f; 
+  margin-top: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .level-display-container, .report-container {
+    width: 90%; 
+  }
+}
